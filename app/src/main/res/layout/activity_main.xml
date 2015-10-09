@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar contato"
+        android:id="@+id/btnContatos"
+        android:layout_below="@+id/txtContato"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contato:"
+        android:id="@+id/txtContato"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anexar foto"
+        android:id="@+id/btnCamera"
+        android:layout_alignTop="@+id/btnContatos"
+        android:layout_alignEnd="@+id/imgCamera"
+        android:layout_toEndOf="@+id/btnContatos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar MMS"
+        android:id="@+id/btnEnviar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtContato"
+        android:layout_toEndOf="@+id/btnContatos"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgCamera"
+        android:layout_below="@+id/btnCamera"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnEnviar"
+        android:layout_alignEnd="@+id/btnEnviar"
+        android:background="#aeadad" />
+
+</RelativeLayout>
