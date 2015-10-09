@@ -141,9 +141,6 @@ public class MainActivity extends Activity {
             } finally {
                 cursor.close();
             }
-        } else {
-            Toast.makeText(this,"Cursor vazio.",Toast.LENGTH_SHORT).show();
         }
-
     }
 }
